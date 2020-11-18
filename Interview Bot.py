@@ -33,3 +33,4 @@ else:
         rando_index = random.randint(0, len(list_of_qualities)-1)
         print("Well " + name + ". It seems like your qualities will make you a great addition to the company. I'm particularly interested in you being " + list_of_qualities[rando_index])
         print("Welcome to the company " + name + ". I know you'll be a great addition to the team.")
+        can_run = False
