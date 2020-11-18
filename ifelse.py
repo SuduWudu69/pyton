@@ -2,7 +2,7 @@ import random
 can_run = True
 print("Hello and welcome to the Sudu Industries online job interview. I'm going to ask you a few basic questions so that we can see if you're fit for the company.")
 name = input("What is your first name? ")
-if len(name)>10 and can_run:
+if len(name)>8 and can_run:
     name_meaning = input("That's quite a long name you have " + name +". It sounds interesting, tell me about what it means. ")
     if name_meaning == "":
         print("You don't have to talk about it if you don't want to. Let's move on to the next question.")
@@ -26,7 +26,7 @@ qualities = input("Now, what qualities do you have that will make you suited for
 list_of_qualities = qualities.split(", ")
 
 if qualities == "" and can_run:
-    print("Well it seems that you are not fit for a job at Sudu industries but if you improve your skills we may be open to a second interview.")
+    print("Well I guess you aren't quite ready for a job at Sudu Industries, but if you take the time to hone your skills we may be open for a second interview.\n Have a good day " + name + ".")
     can_run = False
 else:
     if can_run:
